@@ -7,8 +7,8 @@ import image1 from '../../public/bannerImg/image1.jpg';
 import image2 from '../../public/bannerImg/image2.jpg';
 import NewsPortal from './NewsPortal';
 import CampusShowcase from './CampusWithRealImage';
-// import image3 from '../../public/bannerImg/image3.png';
-
+import CampusReview from './CampusReview';
+import bannerNew from "../../public/bannerNews.jpg";
 
 function Layout() {
     return (
@@ -74,7 +74,11 @@ function Layout() {
                         <NewsPortal />
                     </div>
                 </div>
-                <div className='Review'></div>
+                
+                {/* Campus Review Section */}
+                <div className='Review mt-6'>
+                    <CampusReview bannerImage={bannerNew} />
+                </div>
 
                 {/* Main Content */}
                 <main className="p-6">

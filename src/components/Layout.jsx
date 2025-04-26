@@ -12,7 +12,40 @@ function Layout() {
         {/* Header Section */}
        <UniversityHeader />
 
-    
+        {/* Navigation Bar */}
+        <nav className="bg-[#d7dfe2] text-white shadow-md w-1/5 ring-2 ring-blue-700">
+          <h3 className="bg-blue-800 text-center py-2 font-bold">CƠ CẤU TỔ CHỨC</h3>
+          <ul className="space-y-2 p-4">
+            <li className="flex justify-between items-center px-4 py-2 border-b border-blue-700 text-blue-700 hover:text-red-500">
+              <span>LÃNH ĐẠO</span>
+              <span className="font-bold">&gt;</span>
+            </li>
+            <li className="flex justify-between items-center px-4 py-2 border-b border-blue-700 text-blue-700 hover:text-red-500">
+              <span>CÁC PHÒNG BAN</span>
+              <span className="font-bold">&gt;</span>
+            </li>
+            <li className="flex justify-between items-center px-4 py-2 border-b border-blue-700 text-blue-700 hover:text-red-500">
+              <span>CÁC KHOA</span>
+              <span className="font-bold">&gt;</span>
+            </li>
+            <li className="flex justify-between items-center px-4 py-2 border-b border-blue-700 text-blue-700 hover:text-red-500">
+              <span>CÁC VIỆN</span>
+              <span className="font-bold">&gt;</span>
+            </li>
+            <li className="flex justify-between items-center px-4 py-2 border-b border-blue-700 text-blue-700 hover:text-red-500">
+              <span>CÁC TRUNG TÂM</span>
+              <span className="font-bold">&gt;</span>
+            </li>
+            <li className="flex justify-between items-center px-4 py-2 border-b border-blue-700 text-blue-700 hover:text-red-500">
+              <span>CÁC PHÂN HIỆU</span>
+              <span className="font-bold">&gt;</span>
+            </li>
+            <li className="flex justify-between items-center px-4 py-2 border-b border-blue-700 text-blue-700 hover:text-red-500">
+              <span>ĐOÀN THỂ</span>
+              <span className="font-bold">&gt;</span>
+            </li>
+          </ul>
+        </nav>
 
         {/* Main Content */}
         <main className="p-6">

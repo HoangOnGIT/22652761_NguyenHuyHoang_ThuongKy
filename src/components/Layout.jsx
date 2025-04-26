@@ -1,7 +1,12 @@
 import React from 'react';
+import { Carousel } from 'antd';
 import TopBar from './TopBar';
 import Banner from './Banner';
 import UniversityHeader from './Header';
+import image1 from '../../public/bannerImg/image1.jpg';
+import image2 from '../../public/bannerImg/image2.jpg'; 
+// import image3 from '../../public/bannerImg/image3.png';
+
 
 function Layout() {
   return (
@@ -10,10 +15,23 @@ function Layout() {
         <TopBar />
         <Banner />
         {/* Header Section */}
-       <UniversityHeader />
+        <UniversityHeader />
+
+        {/* Banner Section */}
+        <Carousel autoplay>
+          <div>
+            <img src={image1} alt="Banner 1" className="w-full h-96 object-cover" />
+          </div>
+          <div>
+            <img src={image2} alt="Banner 2" className="w-full h-96 object-cover" />
+          </div>
+          <div>
+            <img src={image2} alt="Banner 3" className="w-full h-96 object-cover" />
+          </div>
+        </Carousel>
 
         {/* Navigation Bar */}
-        <nav className="bg-[#d7dfe2] text-white shadow-md w-1/5 ring-2 ring-blue-700">
+        <nav className="bg-[#d7dfe2] text-white shadow-md w-1/5 ring-2 ring-blue-700 mt-4">
           <h3 className="bg-blue-800 text-center py-2 font-bold">CƠ CẤU TỔ CHỨC</h3>
           <ul className="space-y-2 p-4">
             <li className="flex justify-between items-center px-4 py-2 border-b border-blue-700 text-blue-700 hover:text-red-500">

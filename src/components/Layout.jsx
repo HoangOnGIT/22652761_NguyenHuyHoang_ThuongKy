@@ -8,6 +8,7 @@ import image2 from '../../public/bannerImg/image2.jpg';
 import NewsPortal from './NewsPortal';
 import CampusShowcase from './CampusWithRealImage';
 import CampusReview from './CampusReview';
+import InfoSection from './InfoSection';
 import bannerNew from "../../public/bannerNews.jpg";
 
 function Layout() {
@@ -79,27 +80,11 @@ function Layout() {
                 <div className='Review mt-6'>
                     <CampusReview bannerImage={bannerNew} />
                 </div>
-
-                {/* Main Content */}
-                <main className="p-6">
-                    <section className="banner bg-gray-100 p-6 text-center">
-                        <h2 className="text-2xl font-semibold">Chào mừng kỷ niệm 50 năm ngày giải phóng miền Nam</h2>
-                        <p className="text-lg">Hòa bình - Phát triển</p>
-                    </section>
-                    <section className="content flex justify-between mt-6">
-                        <div className="news w-1/2 pr-4">
-                            <h3 className="text-xl font-bold mb-2">Thông báo</h3>
-                            <ul className="list-disc pl-6">
-                                <li>Thông báo về kế hoạch nghỉ hè...</li>
-                                <li>Thông báo tuyển sinh...</li>
-                            </ul>
-                        </div>
-                        <div className="events w-1/2 pl-4">
-                            <h3 className="text-xl font-bold mb-2">Tin tức - Sự kiện</h3>
-                            <p>AVEA tài trợ gói phần mềm trị giá...</p>
-                        </div>
-                    </section>
-                </main>
+                
+                {/* Info Section */}
+                <div className="mt-6">
+                    <InfoSection />
+                </div>
 
                 {/* Footer Section */}
                 <footer className="bg-gray-200 text-gray-700 text-center p-4 mt-6">
